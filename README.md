@@ -42,7 +42,22 @@ This interactive **Power BI dashboard** delivers end-to-end insights into key pe
 
 ## 📷 Screenshots
 
-> *(Insert dashboard visuals here — use light backgrounds for GitHub theme compatibility)*
+### 🧩 Dashboard
+
+> ![Dashboard](Screenshots/Dashboard.png)
+
+### 📈 Revenue Trend By Category
+
+> ![Revenue Trend](Screenshots/Revenue_Trend_By_Category.png)
+
+### 🛍️ Tooltip
+
+> ![Bookings by Platform](Screenshots/Tooltip.png)
+
+### 📈 Revenue Trend By Day Type
+
+> ![Revenue Trend](Screenshots/Revenue_Trend_By_Day_Type.png)
+
 
 ---
 
