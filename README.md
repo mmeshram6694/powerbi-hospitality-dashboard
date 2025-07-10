@@ -1,127 +1,103 @@
-# 🏨 Power BI Hospitality Dashboard | KPI & Trend Analysis
-End-to-end Power BI dashboard with KPIs, trend insights, and DAX-based analytics for hospitality bookings
+🏥 Power BI Healthcare Billing Dashboard | KPI & Cost Analysis
+End-to-end Power BI dashboard with KPIs, cost trends, and DAX-powered insights for hospital billing and patient services
 
-This interactive **Power BI dashboard** delivers end-to-end insights into key performance metrics in the **hospitality industry**. It empowers data-driven decision-making through dynamic visualizations of bookings, revenue, occupancy trends, and guest satisfaction.
+This interactive Power BI dashboard delivers actionable insights into hospital billing data, providing stakeholders with a complete view of cost distribution, insurance coverage, and procedure-level trends. It enables smarter financial and operational decisions in the healthcare environment.
 
----
+🎯 Objective
+To build a powerful analytics dashboard that allows hospital administrators and finance teams to monitor total billing, patient costs, and department-wise performance—enabling data-backed improvements in care delivery and cost efficiency.
 
-## 🎯 Objective
+🌟 Project Highlights
+💰 KPI Cards: Total Billing, Out-of-Pocket, Insurance Coverage, Avg. Treatment Cost
 
-To develop a data-driven dashboard that enables hospitality stakeholders to monitor operational performance, understand customer behavior, and uncover optimization opportunities across various hotel categories, platforms, and time periods.
+🏥 Department & Procedure billing breakdown with % contribution
 
----
+📍 City-wise billing trends using interactive maps
 
-## 🌟 Project Highlights
+📆 Analysis by Diagnosis, Service Type (Emergency/Inpatient/Outpatient), and Day Type
 
-- 📈 Real-time KPIs: ADR, RevPAR, Occupancy %, Realization %, Ratings
-- 🗂️ Week-over-Week trends with DAX-based comparisons
-- 📅 Weekday vs. Weekend booking performance
-- 🧭 City, room class, and platform-level analysis
-- 🎯 Clear UI with slicers, tooltips, and interactivity
+🎯 Clean UI with slicers, tooltips, and drill-down capability
 
----
+🛠️ Tech Stack Used
+Power BI Desktop: Visualization, DAX measures, and relationship modeling
 
-## 🛠️ Tech Stack Used
+DAX: KPIs like % Department Contribution, Avg Cost per Patient, Insurance vs Out-of-Pocket
 
-- **Power BI Desktop**: Data modeling, DAX calculations, and visualization
-- **DAX**: For KPIs, WoW change %, Realization %, and conditional logic
-- **CSV Files**: Source datasets including bookings, room types, hotel info, and calendar
-- **Power Query**: Data transformation and relationship building
+CSV Files: Data across billing, diagnosis, department, city, and calendar
 
----
+Power Query: Data cleaning, merging, and transformation
 
-## 🧩 Data Model Overview
+🧩 Data Model Overview
+Tables Used
+📁 fact_billing, dim_date, dim_department, dim_diagnosis, dim_city, dim_procedure
 
-**Tables Used**  
-📁 `fact_bookings`, `fact_aggregated_bookings`  
-📁 `dim_date`, `dim_hotels`, `dim_rooms`
+Custom Measures Created
+🧮 Total Billing, Avg Treatment Cost, Insurance Coverage %, Out-of-Pocket, % by Department/Procedure, Patient Satisfaction Score (if available)
 
-**Custom Measures Created**  
-🧮 Revenue, ADR, RevPAR, Occupancy %, Realization %, WoW % Changes, Avg Rating, Cancellation %
-
----
-
-## 📁 Project Structure
-
-```bash
-📦 PowerBI-Hospitality-Dashboard
-├── 📊 HospitalityDashboard.pbix
+📁 Project Structure
+bash
+Copy
+Edit
+📦 PowerBI-Healthcare-Billing-Dashboard
+├── 📊 HealthcareDashboard.pbix
 ├── 📁 Datasets/
-│   ├── fact_bookings.csv
-│   ├── fact_aggregated_bookings.csv
+│   ├── fact_billing.csv
 │   ├── dim_date.csv
-│   ├── dim_hotels.csv
-│   └── dim_rooms.csv
+│   ├── dim_department.csv
+│   ├── dim_city.csv
+│   ├── dim_diagnosis.csv
+│   └── dim_procedure.csv
 ├── 📁 Screenshots/
-│   ├── kpi_cards.jpg
-│   ├── revenue_trend.jpg
-│   ├── bookings_by_platform.jpg
+│   ├── main_kpi_cards.png
+│   ├── department_insights.png
+│   ├── procedure_analysis.png
+│   ├── city_map_view.png
 ├── 📄 README.md
-```
+📷 Screenshots
+🧩 Dashboard Overview
 
----
+🏥 Department Billing Insights
 
-## 📷 Screenshots
+🧪 Procedure-Level Billing
 
-### 🧩 Dashboard
+🗺️ City Map View
 
-> ![Dashboard](Screenshots/Dashboard.png)
+🔍 Key Insights & Takeaways
+Cardiology and Orthopedics drive over 50% of departmental billing—critical areas for cost optimization.
 
-### 📈 Revenue Trend By Category
+X-Ray, CT Scan, and MRI are the top-billed procedures, contributing to 60%+ of all procedure costs.
 
-> ![Revenue Trend](Screenshots/Revenue_Trend_By_Category.png)
+Over $1.13M in Out-of-Pocket costs, signaling gaps in insurance coverage or policy limitations.
 
-### 🛍️ Tooltip
+Cities like Birmingham and Manchester generate the highest billing—likely due to larger facilities or patient volume.
 
-> ![Bookings by Platform](Screenshots/Tooltip.png)
+Emergency & Inpatient dominate high-cost treatments like Fractures and Asthma, while Outpatient is preferred for Hypertension and Migraine.
 
-### 📈 Revenue Trend By Day Type
+🚀 Optimization Results
+Created custom DAX measures for department/procedure-level % contribution
 
-> ![Revenue Trend](Screenshots/Revenue_Trend_By_Day_Type.png)
+Enabled cross-filtering by service type and diagnosis for deeper exploration
 
----
+Identified top 3 cost drivers by department and procedure
 
-## 🔍 Key Insights & Takeaways
+Added dynamic slicers for city, department, and date filters to refine exploration
 
-- Luxury hotels perform better during weekends; business hotels hold steady during weekdays.
-- Direct online bookings tend to have higher realization and revenue.
-- Revenue dropped notably during W23, suggesting potential external impact or campaign expiration.
-- High cancellation rates detected on third-party platforms, indicating room for improvement in reliability or policy clarity.
+📌 Business Recommendations
+Review and renegotiate insurance terms for high Out-of-Pocket departments
 
----
+Introduce bundled pricing for repeat procedures like X-Ray and CT Scan
 
-## 🚀 Optimization Results
+Prioritize patient education and preventive outpatient care for chronic diagnoses
 
-- Defined DAX-based Realization % and ADR to isolate platform inefficiencies.
-- Identified underperforming segments by room class and city.
-- Enhanced user experience with filters and dynamic visuals.
-- Created WoW performance cards for continuous KPI monitoring.
+Evaluate underperforming procedures by realization rate and improve cost transparency
 
----
+🧠 Learnings & Takeaways
+💡 Developed complex KPIs and ratio-based metrics using DAX
 
-## 📌 Business Recommendations
+🧩 Modeled a healthcare star schema with strong data relationships
 
-- Run exclusive weekend campaigns for luxury hotels to boost off-peak occupancy.
-- Incentivize guests for completing direct bookings via own platform.
-- Investigate W23 drop — was it seasonal, external, or operations-related?
-- Improve clarity and communication on cancellation policies to reduce BRN-to-URN gaps.
+📈 Improved storytelling with layered visuals and diagnosis-based trends
 
----
+✅ Created a reusable dashboard framework for healthcare finance analytics
 
-## 🧠 Learnings & Takeaways
-
-- 💡 Built a high-impact, user-friendly dashboard using Power BI
-- 📊 Designed dynamic KPIs and visuals using DAX and modeling best practices
-- 🔍 Improved data storytelling through time-based comparisons and platform insights
-- ✅ Created a dashboard ready for stakeholder presentation and portfolio use
-
----
-
-## 📬 Let’s Connect!
-
-📧 mmeshram@umassd.edu  
-🔗https://www.linkedin.com/in/mayur-meshram9/ 
-
----
-
-*Built with 💜 using Power BI*
+📬 Let’s Connect!
+📧 mmeshram@umassd.edu
